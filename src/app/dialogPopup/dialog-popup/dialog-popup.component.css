@@ -1,0 +1,40 @@
+.dialog-cont{
+    background: #eee;
+}
+.btn-align{
+    position: absolute;
+    right: 4px;
+    top: 120px;
+}
+mat-card{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.total{
+    font-size: 17px;
+    font-weight: bold;
+    color:green;
+}
+span{
+    color: blue;
+}
+.span-name{
+    margin-left: 10px;
+}
+.span-price{
+    margin-left: 38px;
+}
+.span-item{
+    margin-left: 22px;
+}
+.span-sub{
+    margin-left: 46px;
+}
+.item-text{
+    width: 60px;
+    height: 20px;
+}
+.btn-close{
+    margin-left: auto;
+    background: whitesmoke;
+}

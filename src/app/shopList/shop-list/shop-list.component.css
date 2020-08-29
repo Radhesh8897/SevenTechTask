@@ -1,0 +1,80 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+.footer{
+    flex-shrink: 0;
+    flex-grow: 0;
+    background: black;
+    color: white;
+    padding: 3px 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+.wrapper{
+    margin: 10px;
+    display: grid;
+    margin-left: 10px;
+    margin-right: 10px;
+    grid-template-columns: repeat( auto-fit, minmax(170px,1fr) );
+}
+
+.child{
+    margin-left: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #c5c5c5;
+}
+
+.child-icon{
+    margin-left: 14px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #c5c5c5;
+    text-align: center;
+}
+   
+img{
+    width: 100%;
+    display: block; 
+}
+
+.title{
+  font-weight: 600;
+  text-align: center;
+}
+
+.rate{
+  float: left;
+  font-weight: 700;
+}
+
+.offer{
+  color: green;
+  float: right;
+  font-weight: 700;
+  margin-right: 8px;
+}
+.price-mrp{
+  color: #b7b2b2;
+  font-weight: 600;
+  margin-left: 5px;
+}
+.btn-cart{
+  background: yellow;
+  border-radius: 30px;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 12%;
+}
+.box-align {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+.img-logo {
+  height: 40px;
+  width: 130px;
+}

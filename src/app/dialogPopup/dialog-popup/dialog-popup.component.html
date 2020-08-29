@@ -1,0 +1,14 @@
+<h2 mat-dialog-title>Selected Item List</h2>
+<mat-dialog-content class="mat-typography" class="dialog-cont">
+    <mat-card *ngFor="let item of storearr">
+        <p>Product Name:<span class="span-name">{{item.name}}</span></p>
+        <p>Unit Price:<span class="span-price">{{item.price}}</span></p>
+        <p>No of Items: <span class="span-item"><input class="item-text" type="text"></span> </p>
+        <p>Subtotal:<span class="span-sub">{{item.price}}</span></p>
+        <button class="btn-align" mat-button color="warn">Remove</button>
+    </mat-card>
+</mat-dialog-content>
+<mat-dialog-actions>
+    <p class="total">Total: {{total}} Rs</p>
+    <button class="btn-close" mat-button mat-dialog-close>Cancel</button>
+</mat-dialog-actions>

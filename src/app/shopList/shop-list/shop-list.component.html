@@ -1,0 +1,40 @@
+<!-- Header  -->
+<p>
+    <mat-toolbar color="primary">
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+            <!-- <mat-icon>menu</mat-icon> -->
+            <img class="img-logo" src="./assets/seven.png">
+        </button>
+        <!-- <span>Welcome to Ecommerce</span> -->
+        <span class="example-spacer"></span>
+        <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+            <mat-icon>favorite</mat-icon>
+        </button>
+        <button (click)="openDialog()" mat-icon-button class="example-icon favorite-icon"
+            aria-label="Example icon-button with heart icon">
+            <mat-icon matBadge="{{cart}}" matBadgeColor="warn">shopping_cart</mat-icon>
+            <span class="cdk-visually-hidden">
+            </span>
+        </button>
+    </mat-toolbar>
+</p>
+
+<!-- product image list -->
+<div class="wrapper">
+    <div *ngFor="let item of prodlist">
+        <div class="child ">
+            <div class="box-align">
+                <img src="{{item.image}}">
+                <p class="title">{{item.name}}</p>
+                <span class="rate">&#8377;{{item.price}}</span>
+                <span class="offer">5% off</span>
+                <button mat-button class="btn-cart" (click)="toggle(item.id)">Add to cart</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- footer -->
+<div class="footer">
+    <p>@Copyright 2018-2020</p>
+</div>
